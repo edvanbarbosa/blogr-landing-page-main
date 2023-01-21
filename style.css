@@ -9,6 +9,7 @@
     box-sizing: border-box;
     
 }
+
 body{
     font-family: 'Ubuntu', sans-serif;
 }
@@ -101,4 +102,19 @@ header button{
 }
 .buttons > button{
     margin-right: 1.3em;
+}
+
+main > section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.a > .img{
+    margin-right: -20%;
 }
