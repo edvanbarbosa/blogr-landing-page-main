@@ -12,6 +12,7 @@
 
 body{
     font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
 }
 header{
     background: url("images/bg-pattern-intro-desktop.svg") ;
@@ -113,8 +114,119 @@ div.img{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
+    
 
 }
 .a > .img{
-    margin-right: -20%;
+    
+   margin-right: -21%;
+}
+.c > .img{
+    
+    margin-left: -21%;
+ }
+
+ h2{
+    font-family: 'Overpass' sans-serif;
+    text-align: center;
+    margin: 3em 0 -3em 0;
+    font-size: 2.5em;
+    color:  hsl(208, 49%, 24%);
+ }
+
+ .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+ }
+ 
+.text{
+    color: hsl(207, 13%, 34%);
+    margin: 0 12em;
+    
+}
+.text >p{
+    font-family: 'Overpass' sans-serif;
+    font-weight: 300;
+    line-height: 1.8em;
+    letter-spacing: .2px;
+}
+
+ h3{
+    font-family: 'Overpass' sans-serif;
+    margin: 1.3em 0;
+    font-size:1.8em ;
+    color:  hsl(208, 49%, 24%);
+    font-weight: 500;
+}
+
+.b{
+   
+    background: url(images/bg-pattern-circles.svg)  hsl(237, 17%, 21%) no-repeat ;
+    background-position: left bottom;
+    color: white;
+    height: 55vh;
+    border-top-right-radius: 6em ;
+    border-bottom-left-radius:6em;
+    margin: 4em 0;
+    margin-bottom: 10em;
+    
+}
+.b p{
+    color: white;
+    font-weight: 300;
+}
+
+.b h3{
+    font-size: 2.2em;
+    color: #fff;
+}
+
+
+.b img{
+    margin-bottom: -3em;
+    margin-left: 5em;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:  hsl(240, 10%, 16%);
+    height:45vh;
+    margin-top: 10em;
+    border-top-right-radius: 4em;
+    
+}
+footer ul{
+    display: flex;
+   
+    flex-direction: column;
+   
+}
+
+footer ul a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+footer .logo{
+    margin: 0 3em;
+    margin-top: 60px;
+}
+
+footer .img{
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+}
+footer h3{
+    font-family: 'Overpass' sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    color: white;
+    margin-top: 60px;
 }
