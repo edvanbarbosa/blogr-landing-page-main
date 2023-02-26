@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Blogr]</title>
@@ -14,27 +14,35 @@
     <nav>
       <ul class="ul_left">
         <li><img src="images/logo.svg" alt=" logo"></li>
-        <li>Product</li>
-          <ul>
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Marketplace</li>
-            <li>Features</li>
-            <li>Integrations</li>
-          </ul>
-        <li>Company</li>
-          <ul>
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>
-          </ul>
-        <li>Connect</li>
-          <ul>
-          <li>Contact</li>
-            <li>Newsletter</li>
-            <li>LinkedIn</li>
-          </ul>
+        <div class="t_options">
+         
+          <li class="b_ex"><button class="product b_ex">Product <img src="images/icon-arrow-light.svg" alt=""></button></li>
+            <ul class="product options">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+              
+            </ul>
+        </div>
+        <div class="t_options">
+          <li class="b_ex"><button class="company b_ex">Company <img src="images/icon-arrow-light.svg" alt=""></button></li>
+            <ul class="company options">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+        </div>
+        <div class="t_options">
+          <li class="b_ex"><button class="connect b_ex" >Connect <img src="images/icon-arrow-light.svg" alt=""></button></li>
+            <ul class="connect options">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+        </div>
       </ul>
       <ul class="ul_rigth">
         <li><button class="button_login">Login</button></li>
@@ -145,7 +153,7 @@
       <li><a href="#">LinkedIn</a></li>
     </ul>
   </footer>
-  <script src="main.js"></script>
+  <script src="/./src/main.js"></script>
 </body>
  
 </html>
