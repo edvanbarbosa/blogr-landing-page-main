@@ -49,9 +49,10 @@ nav{
     justify-content: flex-start;
     text-align: center;
     gap: 7px;
+    width: 100%;
 }
 .options{
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: #fff;
     color: #000000a3;
@@ -60,16 +61,16 @@ nav{
     border-radius: 5px;
     width: 100%;
     padding: .8em .5em .8em 1em;
-    z-index: +1;
+    z-index: +10;
     gap: 7px;
     box-shadow: 1px 1px 4px 2px #00000014;
+    animation: animation .4s ease-in-out;
     
     
 }
 .ul_rigth, .ul_left{
     display: flex;
     align-items: flex-start;
-    gap: 7px;
     
    
 }
@@ -88,7 +89,7 @@ header > section{
     justify-content: center;
     height: 70%;
     font-family: 'Overpass', sans-serif;
-    z-index: -1000;
+    z-index: -1;
 }
 h1{
     font-size: 4em;
@@ -106,7 +107,7 @@ header > section > p{
    
 }
 button.b_ex{
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     position: relative;
     border: none;
@@ -117,6 +118,8 @@ button.b_ex{
             transition-duration: 400ms;
     -webkit-transition-property: color;
     transition-property: color;
+
+    z-index: 0;
 }
 
 .ul_left  img{
@@ -339,3 +342,12 @@ button.b_ex:after {
      box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
     }
    }
+
+@keyframes animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
