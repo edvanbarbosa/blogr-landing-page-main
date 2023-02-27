@@ -15,7 +15,7 @@ body{
     overflow-x: hidden;
 }
 header{
-    background: url("images/bg-pattern-intro-desktop.svg") ;
+    background: url("../images/bg-pattern-intro-desktop.svg") ;
     background-position: center left;
     height: 65vh;
     text-align: center;
@@ -218,7 +218,7 @@ div.img{
 
 .b{
    
-    background: url(images/bg-pattern-circles.svg)  hsl(237, 17%, 21%) no-repeat ;
+    background: url(../images/bg-pattern-circles.svg)  hsl(237, 17%, 21%) no-repeat ;
     background-position: left bottom;
     color: white;
     height: 55vh;
