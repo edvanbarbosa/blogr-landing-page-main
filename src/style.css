@@ -243,6 +243,9 @@ div.img{
     margin-bottom: -3em;
     margin-left: 5em;
 }
+.options li{
+    transition: .3s ease-in-out;
+}
 
 footer{
     display: flex;
@@ -326,6 +329,13 @@ button.b_ex:after {
             transition-duration: 400ms;
     -webkit-transition-property: width, left;
     transition-property: width, left;
+}
+
+.options li:hover{
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.693);
 }
 
 
