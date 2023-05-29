@@ -1,0 +1,25 @@
+@charset "UTF-08";
+
+@media screen and (max-width:1415px){
+    h2{
+        padding-bottom: 4em;
+    }
+}
+@media screen and (max-width:1320px){
+    .a >.img{
+        width: 40%;
+        margin-right: -5%;
+        
+    }
+    .a picture, .c picture{
+        width: 90%;
+    }
+    .text{
+        width: 40%;
+        margin:120px ;
+    }
+    .c >.img{
+        width: 120%;
+        margin-left: -40%;
+    }
+}
