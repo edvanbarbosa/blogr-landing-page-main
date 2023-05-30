@@ -1,4 +1,5 @@
 # Frontend Mentor - Blogr landing page
+Link: https://edvanbarbosa.github.io/blogr-landing-page-main/
 
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
