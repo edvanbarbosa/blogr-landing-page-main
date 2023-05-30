@@ -75,6 +75,9 @@ nav{
     
    
 }
+.ul_rigth{
+    gap: 12px;
+}
 .ul_left{
     
     width: 50%;
@@ -199,7 +202,7 @@ div.img{
  
 .text{
     color: hsl(207, 13%, 34%);
-    margin: 0 12em;
+    margin: 0 7em;
     
 }
 .text >p{
