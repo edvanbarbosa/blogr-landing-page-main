@@ -35,6 +35,24 @@ header{
     border-bottom-left-radius: 9em;
 
 }
+.burguer{
+    display: none;
+}
+.popt{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.opt-container{
+    display: flex;
+    width: 40%;
+}
+.btt-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -46,8 +64,7 @@ nav{
 .t_options{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
+    justify-content: center;
     gap: 2px;
     width: 30%;
 }
@@ -64,9 +81,7 @@ nav{
     z-index: 10;
     gap: 7px;
     box-shadow: 1px 1px 4px 2px #00000014;
-    animation: animation .4s ease-in-out ;
-    
-    
+    animation: animation .4s ease-in-out ;    
 }
 
 .ul_rigth, .ul_left{
@@ -78,9 +93,10 @@ nav{
 .ul_rigth{
     gap: 12px;
 }
-.ul_left{
-    
-    width: 50%;
+.ul_pp{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 li{
     display: flex;
