@@ -17,20 +17,21 @@ body{
 header{
     background: url("../images/bg-pattern-intro-desktop.svg") ;
     background-position: center left;
-    height: 65vh;
+    height: 90vh;
     text-align: center;
     border-bottom-left-radius: 9em;
     color: #fff;
     font-family: 'Overpass', sans-serif;
+    
    
   
 }
 .filtro_gradiente{
     position: relative;
-    background-image: linear-gradient(to right,  hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    height: 65vh;
+    background-image: linear-gradient(to right,  #ff8f70, #ff3d54);
+    height: 90vh;
     width: 100vw;
-    margin-top: -65vh;
+    margin-top: -90vh;
     z-index: -1;
     border-bottom-left-radius: 9em;
 
@@ -40,6 +41,7 @@ header{
 }
 .popt{
     display: flex;
+    align-items: first baseline;
     justify-content: space-between;
     width: 100%;
 }
@@ -67,6 +69,7 @@ nav{
     justify-content: center;
     gap: 2px;
     width: 30%;
+    height: 100%;
 }
 .options{
     display: none;
@@ -87,6 +90,7 @@ nav{
 .ul_rigth, .ul_left{
     display: flex;
     align-items: flex-start;
+    height: 100%;
     
    
 }
@@ -95,7 +99,8 @@ nav{
 }
 .ul_pp{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    
     width: 100%;
 }
 li{
@@ -163,7 +168,7 @@ header button{
 }
 .button_bkfff{
     background-color: #fff;
-    color:  hsl(353, 100%, 62%);
+    color:  #ff3d54;
     border-color: #fff;
     text-decoration: none;
 }
@@ -177,7 +182,11 @@ header button{
 .buttons > button{
     margin-right: 1.3em;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
 main > section{
     display: flex;
     justify-content: center;
@@ -202,7 +211,7 @@ div.img{
     text-align: center;
     margin: 3em 0 -3em 0;
     font-size: 2.5em;
-    color:  hsl(208, 49%, 24%);
+    color:  #1f3f5b;
  }
 
  .a {
@@ -231,7 +240,7 @@ div.img{
     font-family: 'Overpass' sans-serif;
     margin: 1.3em 0;
     font-size:1.8em ;
-    color:  hsl(208, 49%, 24%);
+    color:  #1f3f5b;
     font-weight: 500;
 }
 
@@ -306,6 +315,106 @@ footer h3{
     color: white;
     margin-top: 60px;
 }
+.menu-mobile{
+    display: none;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    
+}
+.menu-mobile .t_options{
+    height: auto;
+    padding: 1em 0;
+    width: 100%;
+}
+.menu-mobile .t_options button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 10%;
+    color: #1f3f5b;
+}
+.menu-mobile .options{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background-color: #0000003b; 
+   color: #1f3f5b;
+   border-radius: 10px;
+    width: 100%; 
+    margin-top: 1em;
+
+}
+
+.opt-container-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    color: #000000a3;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.46);
+    z-index: 0;
+
+}
+.options-mobile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+}
+.opt-container-mobile .btt-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #00000035;
+    height: 30%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.opt-container-mobile .btt-container .ul_rigth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    gap: 1em;
+}
+.opt-container-mobile .button_login{
+    color: #1f3f5b;
+
+}
+.opt-container-mobile .button_bkfff{
+    background-image: linear-gradient(to right,#ff8f70,#ff3d54);
+    color: #fff;
+
+}
+.opt-container-mobile .button_login:hover{
+    background-color: #ff3d54;
+    color: #fff;
+    animation: pulsebtm 1.2s ease-in-out infinite;
+}
+.opt-container-mobile .button_bkfff:hover{
+    animation: pulsebtm 1.2s ease-in-out infinite;
+}
+
 
 
 /* active states */
@@ -320,20 +429,20 @@ footer h3{
     -webkit-animation: pulse 2s infinite;
     animation: pulse512 1.5s infinite;
     background-color: #fff;
-    color: hsl(353, 100%, 62%);
+    color: #ff3d54;
 }
 footer a:hover{
     text-decoration: underline;
     color: white;
 }
 
-button.b_ex:focus:after,
-button.b_ex:hover:after {
+nav button.b_ex:focus:after,
+nav button.b_ex:hover:after {
   width: 50%;
   left: 0%;
 }
 
-button.b_ex:after {
+nav button.b_ex:after {
     content: "";
     pointer-events: none;
     bottom: -2px;
@@ -371,6 +480,20 @@ button.b_ex:after {
      box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
     }
    }
+   @keyframes pulsebtm {
+    0% {
+     box-shadow: 0 0 0 0 #ff3d54;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
 
 @keyframes animation {
     0%{

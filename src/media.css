@@ -23,6 +23,9 @@
         width: 120%;
         margin-left: -40%;
     }
+    .opt-container,.btt-container{
+        width: 50%;
+    }
 }
 @media screen and (max-width:1150px){
     .text p{
@@ -31,6 +34,9 @@
     h1{
         font-size: 3.2em;
     }
+    
+    
+
     .ul_left{
         width: 65%;
     }
@@ -54,7 +60,124 @@
     }
 }
 @media screen and (max-width:940px){
+    h2{
+        font-size: 2em;
+        margin:1em 0 0 0 ;
+        padding: 3em 0;
+    }
+    .logo{
+        width: 40%;
+    }
+    .ul_pp{
+       justify-content: space-between;
+       position: relative;
+    }
+    nav{
+        height: 15%;
+        padding: 3em 2em;
+    }
    .popt{
-       display: none;
+     display: none;
+    
    }
+   header > section > p{
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: 300;
+    }
+   .burguer{
+        display: block;
+        cursor: pointer;
+   }
+   section{
+    flex-direction: column;
+    text-align: center;
+   }
+   .a > .img{
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    width: 100%;
+   }
+   .a >.img picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   }
+   .a > .img img{
+    width: 100%;
+   }
+   section > img{
+        width: 30%;
+   }
+   .a{
+    background-position: center center;
+    flex-direction: column-reverse;
+    padding-bottom: 10em;
+   }
+   .text p{
+    font-size: 1.1em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .b{
+        margin: 7em 0;
+        height: 80vh;
+    }
+    .text{
+        text-align: center;
+    }
+    .b .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        margin-top: -10%;
+    }
+    .b img{
+        margin-bottom: 0;
+        margin-left:0;
+        width: 150%;
+    }
+    .b .text{
+        height: 80%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0em 0em;
+        padding-bottom: 3em;
+        width: 100%;
+    }
+    .c > .img{
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+       }
+       .c >.img picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       }
+       .c > .img img{
+        width: 200%;
+       }
+       .text{
+        padding: 0em 3em;
+       }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150%;
+        padding: 3em 0;
+        text-align: center
+        ;
+    }
+    footer li{
+        display: flex;
+        justify-content: center;
+    }
 }
