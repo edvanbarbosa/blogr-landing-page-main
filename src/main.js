@@ -83,7 +83,7 @@ const controlBurguer = ()=>{
 const controldisplayMenus = ()=>{
     const menuMobile = document.querySelector('.menu-mobile')
     const menuDesktop = document.querySelector('.ul_pp')
-
+    menuMobile.style.display = 'none'
     window.addEventListener('resize',()=>{
         if(menuDesktop.style.display != 'none'){
             menuMobile.style.display = 'none'
